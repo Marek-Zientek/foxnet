@@ -1,0 +1,35 @@
+.btn-burger {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    padding: 5px;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    background: transparent;
+    transition: color .5s .1s;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.burger-active {
+    color: #fff;
+}
+
+.btn {
+    padding: 2rem 4rem;
+    border-radius: 15px;
+}
+
+.btn__header {
+    background-color: #1ea22a;
+    border: 1px solid transparent;
+    color: white;
+    font-size: 1.5rem;
+    transition: background-color .3s;
+
+    &:hover {
+        background-color: rgba(0,0,0,.7);
+    }
+}

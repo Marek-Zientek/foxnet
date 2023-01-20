@@ -1,0 +1,22 @@
+@font-face {
+    font-family: '! PEPSI !';
+    src: url('../assets/fonts/PEPSI.woff2') format('woff2'),
+        url('../assets/fonts/PEPSI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+$default__fontSize : 18px;
+$default__fontFamily : 'Montserrat', sans-serif;
+
+
+$logo__fontFamily : '! PEPSI !';
+$logo__fontSize : 3rem;
+$logo__fontWeight : 800;
+
+
+$navbar__fontWeight : 600;
+
+$navigation__link-size : 2rem;

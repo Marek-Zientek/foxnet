@@ -1,0 +1,30 @@
+@use '../Utils/colors' as color;
+@use '../Settings/typography' as typography;
+@use '../Utils/mixins' as mixins;
+
+
+.contact__info {
+    width: 100vw;
+    height: 3vh;
+    @include mixins.flex-centered();
+    overflow: hidden;
+}
+
+.contact__container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & > .contact__info-phone, .contact__info-email {
+        flex-basis: 50%;
+        height: 100%;
+        @include mixins.flex-centered();
+
+        & > .contact__phone-link, .contact__email-link {
+            font-weight: typography.$navbar__fontWeight;
+        }
+    }
+
+}

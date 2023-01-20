@@ -1,0 +1,51 @@
+@use '../Utils/colors' as colors;
+@use '../Utils/mixins' as mixins;
+
+@use '../Settings/typography' as typography;
+
+
+.navigation {
+    width: 100vw;
+    height: 10vh;
+    @include mixins.flex-centered();
+    overflow: hidden;
+
+    &__container {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+.navigation__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: colors.$navigation__list-bg;
+    transform: translateY(-1000px);
+    transition: transform .5s;
+
+    & > .navigation__List-link {
+        color: colors.$navigation__list-linkColor;
+        font-size: typography.$navigation__link-size;
+        // padding: 20px 0;
+        // text-align: left;
+        // width: 60%;
+    }
+}
+.active-nav {
+    transform: translateY(0);
+}
+
+

@@ -1,0 +1,30 @@
+@use '../Utils/colors' as color;
+@use '../Settings/typography' as typography;
+
+
+.logo__wrapper {
+    position: relative;
+}
+
+.logo__link {
+    position: relative;
+    color: black;
+}
+
+.logo__title {
+    font-family: typography.$logo__fontFamily;
+    font-size: typography.$logo__fontSize;
+    font-weight: typography.$logo__fontWeight;
+    color: color.$logo__color-default;
+
+}
+
+.logo__subtitle {
+    background-color: color.$logo__bgColor-subtitle;
+    padding: .3rem;
+    color: #fff;
+    position: absolute;
+    bottom: -30%;
+    left: 30%;
+    width: 100%;
+}
